@@ -169,6 +169,17 @@ export const ProductsPage: React.FC = () => {
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        // Fallback when company image link fails to resolve directly
+                        (e.target as HTMLElement).style.display = 'none';
+                        const parent = (e.target as HTMLElement).parentElement;
+                        if (parent) {
+                          const fallback = document.createElement('div');
+                          fallback.className = 'text-center p-4 text-muted-foreground/60';
+                          fallback.innerHTML = `<div class="font-serif text-sm font-semibold text-sage-dark mb-1">${product.name}</div><span class="text-[10px] uppercase tracking-wider text-gold font-bold">${product.category}</span>`;
+                          parent.appendChild(fallback);
+                        }
+                      }}
                     />
                   ) : (
                     <div className="text-center p-4 text-muted-foreground/50">

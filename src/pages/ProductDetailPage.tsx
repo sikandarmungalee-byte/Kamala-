@@ -33,6 +33,16 @@ export const ProductDetailPage: React.FC = () => {
                 alt={product.name}
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  (e.target as HTMLElement).style.display = 'none';
+                  const parent = (e.target as HTMLElement).parentElement;
+                  if (parent) {
+                    const fallback = document.createElement('div');
+                    fallback.className = 'text-center p-4';
+                    fallback.innerHTML = `<div class="font-serif text-2xl text-foreground mb-2">${product.name}</div><p class="text-sm font-sans text-sage-dark font-medium">${product.unit}</p>`;
+                    parent.appendChild(fallback);
+                  }
+                }}
               />
             ) : (
               <div>
