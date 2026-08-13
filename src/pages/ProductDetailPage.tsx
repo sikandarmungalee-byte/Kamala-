@@ -26,23 +26,13 @@ export const ProductDetailPage: React.FC = () => {
         </Link>
 
         <div className="bg-white border border-border p-8 md:p-12 shadow-xs grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="bg-sage-light aspect-square flex items-center justify-center p-4 text-center border border-border overflow-hidden relative">
+          <div className="bg-slate-100 aspect-square flex items-center justify-center border border-border overflow-hidden relative">
             {product.image ? (
               <img
                 src={product.image}
                 alt={product.name}
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
-                onError={(e) => {
-                  (e.target as HTMLElement).style.display = 'none';
-                  const parent = (e.target as HTMLElement).parentElement;
-                  if (parent) {
-                    const fallback = document.createElement('div');
-                    fallback.className = 'text-center p-4';
-                    fallback.innerHTML = `<div class="font-serif text-2xl text-foreground mb-2">${product.name}</div><p class="text-sm font-sans text-sage-dark font-medium">${product.unit}</p>`;
-                    parent.appendChild(fallback);
-                  }
-                }}
               />
             ) : (
               <div>

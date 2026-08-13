@@ -162,24 +162,13 @@ export const ProductsPage: React.FC = () => {
                 className="bg-white border border-border flex flex-col justify-between hover:shadow-md transition-shadow group overflow-hidden"
               >
                 {/* Product Image Header */}
-                <div className="w-full h-44 bg-cream border-b border-border relative overflow-hidden flex items-center justify-center">
+                <div className="w-full h-52 bg-slate-100 border-b border-border relative overflow-hidden flex items-center justify-center">
                   {product.image ? (
                     <img
                       src={product.image}
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        // Fallback when company image link fails to resolve directly
-                        (e.target as HTMLElement).style.display = 'none';
-                        const parent = (e.target as HTMLElement).parentElement;
-                        if (parent) {
-                          const fallback = document.createElement('div');
-                          fallback.className = 'text-center p-4 text-muted-foreground/60';
-                          fallback.innerHTML = `<div class="font-serif text-sm font-semibold text-sage-dark mb-1">${product.name}</div><span class="text-[10px] uppercase tracking-wider text-gold font-bold">${product.category}</span>`;
-                          parent.appendChild(fallback);
-                        }
-                      }}
                     />
                   ) : (
                     <div className="text-center p-4 text-muted-foreground/50">
