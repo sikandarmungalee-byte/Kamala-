@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "bookings": {
+      "title": "Session Bookings",
+      "description": "Appointment requests submitted by clients",
+      "properties": {
+        "name": { "type": "string", "description": "Client full name" },
+        "email": { "type": "string", "description": "Client email" },
+        "phone": { "type": "string", "description": "Client phone" },
+        "service": { "type": "string", "description": "Service name" },
+        "preferred_date": { "type": "string", "description": "Preferred date YYYY-MM-DD" },
+        "preferred_time": { "type": "string", "description": "Preferred time slot HH:MM" },
+        "message": { "type": "string", "description": "Optional notes" },
+        "status": { "type": "string", "description": "Booking status: pending, confirmed, cancelled" },
+        "created_at": { "type": "string", "description": "Timestamp" }
+      },
+      "required": ["name", "email", "service"]
+    },
+    "orders": {
+      "title": "Gfrag Orders",
+      "description": "Product order requests submitted by clients",
+      "properties": {
+        "order_number": { "type": "string" },
+        "customer_name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "shipping_address": { "type": "string" },
+        "city": { "type": "string" },
+        "items": { "type": "array" },
+        "total": { "type": "number" },
+        "status": { "type": "string" },
+        "created_at": { "type": "string" }
+      },
+      "required": ["customer_name", "phone", "shipping_address"]
+    },
+    "products": {
+      "title": "Gfrag Products",
+      "description": "Health supplement catalog items",
+      "properties": {
+        "id": { "type": "number" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "price": { "type": "number" },
+        "unit": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "required": ["name", "category", "price"]
+    }
+  }
+}
