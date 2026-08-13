@@ -112,7 +112,7 @@ const rawProducts = [
     "id": 12,
     "name": "Gfrag® Hunger Buster",
     "category": "Appetite Management",
-    "price": 350,
+    "price": 360,
     "unit": "90 Caps",
     "description": "Natural Appetite Suppressant. Suitable for all ages."
   },
@@ -192,7 +192,7 @@ const rawProducts = [
     "id": 22,
     "name": "Gfrag® Potent Fat Burner",
     "category": "Fat Burners",
-    "price": 280,
+    "price": 300,
     "unit": "60 Caps",
     "description": "Fat Loss, increases Metabolism, suited for people with heart problems or epilepsy."
   },
@@ -208,7 +208,7 @@ const rawProducts = [
     "id": 24,
     "name": "Gfrag® Gut-Amine",
     "category": "Gut Health",
-    "price": 290,
+    "price": 300,
     "unit": "200g",
     "description": "Relieves IBS and heals leaky gut, anti-aging, improves Athletic Performance, improves symptoms caused by Diabetes, improves gut health, anti-inflammatory."
   },
@@ -216,7 +216,7 @@ const rawProducts = [
     "id": 25,
     "name": "Gfrag® Sculpt & Cleanse",
     "category": "Gut Health",
-    "price": 290,
+    "price": 300,
     "unit": "60 Caps",
     "description": "Helps with constipation."
   },
@@ -224,7 +224,7 @@ const rawProducts = [
     "id": 26,
     "name": "Gfrag® IBS",
     "category": "Gut Health",
-    "price": 340,
+    "price": 350,
     "unit": "90 Caps",
     "description": "Helps with inflammation of colon, strengthens colon lining, bloating and flatulence, abdominal pain."
   },
@@ -232,7 +232,7 @@ const rawProducts = [
     "id": 27,
     "name": "Gfrag® Pro Bi",
     "category": "Gut Health",
-    "price": 300,
+    "price": 320,
     "unit": "60 Caps",
     "description": "Promotes intestinal health, increases healthy bacteria in the gut, improves IBS, diarrhoea, constipation, acid reflux/heartburn."
   },
@@ -240,7 +240,7 @@ const rawProducts = [
     "id": 28,
     "name": "Gfrag® Colitis & Crohns",
     "category": "Gut Health",
-    "price": 290,
+    "price": 300,
     "unit": "30 Caps",
     "description": "A herbal supplement that assists with pain and inflammation associated to Ulcerative Colitis, Crohns, Gastritis & Enteritis."
   },
@@ -296,7 +296,7 @@ const rawProducts = [
     "id": 35,
     "name": "Gfrag® Collagen Cream",
     "category": "Skin Range",
-    "price": 425,
+    "price": 450,
     "unit": "50ml",
     "description": "Made with collagen peptides, hydrates, lifts, firms, restores. With Vitamin A, C, E and Co-Enzyme Q10 & Collagen."
   },
@@ -576,7 +576,7 @@ const rawProducts = [
     "id": 70,
     "name": "Gfrag® Boot Camp Body Shake",
     "category": "Summer Range",
-    "price": 340,
+    "price": 350,
     "unit": "1kg",
     "description": "Add to Smoothies, use for Baking, 5 shakes per day can be used as a meal replacement. Chocolate, Vanilla/Strawberry flavour."
   },
@@ -680,7 +680,7 @@ const rawProducts = [
     "id": 83,
     "name": "Gfrag® Collagen Cream",
     "category": "Collagen Range",
-    "price": 425,
+    "price": 450,
     "unit": "50ml",
     "description": "Made with Collagen Peptides, hydrates, lifts, firms, restores. With Vitamin A, C, E and Co-Enzyme Q10 & Collagen."
   },
@@ -768,7 +768,7 @@ const rawProducts = [
     "id": 94,
     "name": "Gfrag® Migraine Support",
     "category": "Nutraceuticals",
-    "price": 200,
+    "price": 220,
     "unit": "30 Caps",
     "description": "Prevents migraines, lessens the severity of migraines, assists with bad headaches, helps with psoriasis, helps with tinnitus."
   },
@@ -792,7 +792,7 @@ const rawProducts = [
     "id": 97,
     "name": "Gfrag® Green Tea",
     "category": "Nutraceuticals",
-    "price": 280,
+    "price": 300,
     "unit": "60 Caps",
     "description": "98% Pure Green Tea, aids in weight loss and abdominal fat, speeds up metabolism, reduces abdominal bloating, lowers blood pressure, sugar and cholesterol."
   },
